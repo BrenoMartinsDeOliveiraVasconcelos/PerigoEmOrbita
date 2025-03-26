@@ -1,0 +1,1 @@
+global.ORBIT_DISTANCE = 32 // Distancia do ponto de orgem
