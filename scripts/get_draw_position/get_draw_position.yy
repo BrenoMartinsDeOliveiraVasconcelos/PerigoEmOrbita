@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"get_xy_angle",
+  "%Name":"get_draw_position",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"get_xy_angle",
+  "name":"get_draw_position",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
