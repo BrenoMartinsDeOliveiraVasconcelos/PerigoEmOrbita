@@ -1,6 +1,8 @@
 global.ORBIT_DISTANCE = 64 // Distancia do ponto de orgem
 global.START_ANGLE = 0
 global.ORBIT_DOT_DIVISOR = 4
+global.SPEED_CHANGE_RATE = 0.25
+global.SPEED_CHANGE_TIMEOUT = 10 // Em frames
 
 // Adicionar o planeta
 global.PLANET = instance_create_layer(room_width/2, room_height/2, "Game", oPlanet)
@@ -26,6 +28,6 @@ for (var angle=1; angle <= 360; angle++){
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
 
-global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S ", false, 0)
+global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .", false, 0)
 
 global.DRAW_SPACING = 10

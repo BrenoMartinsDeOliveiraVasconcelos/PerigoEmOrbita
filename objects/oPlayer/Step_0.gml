@@ -14,6 +14,25 @@ if (keyboard_check(rotation_down_key)){
 	rotation_angle -= rotation_speed
 }
 
+// Alterar velocidade com base no timeout
+if (speed_change_time == 0){
+	speed_change_time += 1
+	
+	if (keyboard_check(increase_speed_key)  && c_speed < max_c_speed){
+		c_speed += global.SPEED_CHANGE_RATE
+	}else if (keyboard_check(decrease_speed_key)  && c_speed > 0){
+		c_speed -= global.SPEED_CHANGE_RATE
+	}else{
+		speed_change_time -= 1
+	}
+}else{
+	speed_change_time += 1
+	
+	if (speed_change_time > global.SPEED_CHANGE_TIMEOUT){
+		speed_change_time = 0
+	}
+}
+
 if (current_angle < 0){
 	current_angle = 360 // Para 360 se menor que zero
 }
