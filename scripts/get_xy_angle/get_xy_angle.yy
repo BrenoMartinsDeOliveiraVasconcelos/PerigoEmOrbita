@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"get_xy_angle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_xy_angle",
+  "parent":{
+    "name":"Jogo",
+    "path":"folders/Objects/Jogo.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

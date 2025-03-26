@@ -41,6 +41,7 @@
     {"id":{"name":"oPlanet","path":"objects/oPlanet/oPlanet.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"get_xy_angle","path":"scripts/get_xy_angle/get_xy_angle.yy",},},
     {"id":{"name":"sPlanet","path":"sprites/sPlanet/sPlanet.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
   ],
