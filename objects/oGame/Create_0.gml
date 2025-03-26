@@ -1,6 +1,6 @@
 global.ORBIT_DISTANCE = 64 // Distancia do ponto de orgem
 global.START_ANGLE = 0
-global.ORBIT_DOT_DIVISOR = 8
+global.ORBIT_DOT_DIVISOR = 4
 
 // Adicionar o planeta
 global.PLANET = instance_create_layer(room_width/2, room_height/2, "Game", oPlanet)
