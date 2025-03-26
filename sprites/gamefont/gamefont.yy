@@ -3,9 +3,9 @@
   "%Name":"gamefont",
   "bboxMode":0,
   "bbox_bottom":15,
-  "bbox_left":3,
+  "bbox_left":0,
   "bbox_right":12,
-  "bbox_top":5,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -26,6 +26,8 @@
     {"$GMSpriteFrame":"","%Name":"7f80dbcd-68a6-4bd6-bb0a-b5e42b22db8d","name":"7f80dbcd-68a6-4bd6-bb0a-b5e42b22db8d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"36dd5c2b-3c40-4dc5-9093-b43ba2d04cbb","name":"36dd5c2b-3c40-4dc5-9093-b43ba2d04cbb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"4834818f-b689-4dcf-98e7-2cecb01c6021","name":"4834818f-b689-4dcf-98e7-2cecb01c6021","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ce9e1ce2-5e58-4678-8ffc-fb55506dde46","name":"ce9e1ce2-5e58-4678-8ffc-fb55506dde46","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"407501e1-92be-463d-8b7c-6a5abee70cf2","name":"407501e1-92be-463d-8b7c-6a5abee70cf2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -62,7 +64,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":14.0,
+    "length":16.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -123,6 +125,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4834818f-b689-4dcf-98e7-2cecb01c6021","path":"sprites/gamefont/gamefont.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"2c0fe02a-56fa-43c2-b0f5-cf46496d7aa9","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ce9e1ce2-5e58-4678-8ffc-fb55506dde46","path":"sprites/gamefont/gamefont.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"86e03acc-486d-42c5-b1b6-b19dde93f1cc","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"407501e1-92be-463d-8b7c-6a5abee70cf2","path":"sprites/gamefont/gamefont.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"076ae110-73ab-49e1-b206-8ab705586029","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

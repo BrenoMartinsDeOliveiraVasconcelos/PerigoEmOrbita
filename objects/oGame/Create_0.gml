@@ -14,6 +14,6 @@ xy_player = get_xy_angle(global.PLANET.x, global.PLANET.y, global.ORBIT_DISTANCE
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
 
-global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/", false, 0)
+global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S ", false, 0)
 
 global.DRAW_SPACING = 10
