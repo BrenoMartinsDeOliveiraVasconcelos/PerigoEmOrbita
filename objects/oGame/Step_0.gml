@@ -1,7 +1,7 @@
 // Criar asteroides aleatoriamente
 var asteroid_chance = global.ASTEROID_CHANCE * global.CHANCE_MULTIPLIER
 
-if (random_range(0, 1000) <= asteroid_chance){
+if (random_range(0, 1000) <= asteroid_chance && instance_number(oAsteroid) <= global.MAX_ASTEROID_COUNT){
 	var ast = instance_create_layer(room_width*2, room_height*2, "Player", oAsteroid)
 	ast.distance = random_range(room_width, room_width*2)
 	ast.current_rotation_angle = random_range(0, 360)

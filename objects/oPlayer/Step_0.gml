@@ -90,6 +90,10 @@ if (hp >= hp_max){
 hp_percent = (hp / hp_max) * 100
 
 
+// Arredondamento do score
+points = round(points)
+
+
 if (hp <= 0){
 	room_goto(gameover)
 }

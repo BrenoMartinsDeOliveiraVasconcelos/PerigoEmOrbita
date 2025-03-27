@@ -5,10 +5,11 @@ global.SPEED_CHANGE_RATE = 0.25
 global.SPEED_CHANGE_TIMEOUT = 10 // Em frames
 global.MAX_ASTEROID_SPEED = 0.25
 global.MIN_ASTEROID_SPEED = 0.1
-global.MIN_ASTEROID_DAMAGE = 0.5
-global.MAX_ASTEROID_DAMAGE = 1.5
+global.MIN_ASTEROID_DAMAGE = 5
+global.MAX_ASTEROID_DAMAGE = 15
 global.MIN_ASTEROID_BASE_SCORE = 10
 global.MAX_ASTEROID_BASE_SCORE = 50
+global.MAX_ASTEROID_COUNT = 1
 global.ASTEROID_CHANCE = 0.002 // Em porcentagem
 global.CHANCE_MULTIPLIER = 1000 // Número usado para definir os números aleatórios de chnace
 global.SCOREPOS = 0.10 // Porcentagem para localização do score
@@ -42,7 +43,7 @@ for (var dist=global.ORBIT_DISTANCE; dist>0; dist--){
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
 
-global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HPE", false, 0)
+global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HPE-", false, 0)
 global.SCOREFONT = font_add_sprite_ext(scorefont, "A0123456789-.Z", false, 0)
 
 global.DRAW_SPACING = 10
