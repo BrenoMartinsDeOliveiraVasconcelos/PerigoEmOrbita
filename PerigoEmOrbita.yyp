@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"PerigoEmOrbita",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -33,11 +33,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.1300.0.785",
   },
   "name":"PerigoEmOrbita",
   "resources":[
@@ -51,6 +52,7 @@
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"game","path":"rooms/game/game.yy",},},
     {"id":{"name":"gameover","path":"rooms/gameover/gameover.yy",},},
+    {"id":{"name":"calculate_influence","path":"scripts/calculate_influence/calculate_influence.yy",},},
     {"id":{"name":"get_drawy_position","path":"scripts/get_drawy_position/get_drawy_position.yy",},},
     {"id":{"name":"get_xy_angle","path":"scripts/get_xy_angle/get_xy_angle.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
