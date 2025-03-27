@@ -14,6 +14,28 @@ if (keyboard_check(rotation_down_key)){
 	rotation_angle -= rotation_speed
 }
 
+if (blast_rate_timer == 0){
+	if (keyboard_check(shoot_key)){
+		blast_rate_timer++
+		var blast = instance_create_layer(x, y, "Game", oLaserBlast)
+	
+		blast.shooter = id
+		blast.sprite_index = blast_sprite
+		blast.image_angle = image_angle - 90
+		blast.origin_x = x
+		blast.origin_y = y
+		blast.blast_distance = blast_distance
+		blast.blast_speed = blast_speed
+		blast.angulation = blast.image_angle
+	}
+}else{
+	blast_rate_timer++
+	
+	if (blast_rate_timer > blast_rate){
+		blast_rate_timer = 0
+	}
+}
+
 // Alterar velocidade com base no timeout
 if (speed_change_time == 0){
 	speed_change_time += 1

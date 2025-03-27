@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"get_draw_position",
+  "%Name":"get_drawy_position",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"get_draw_position",
+  "name":"get_drawy_position",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
