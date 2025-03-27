@@ -1,5 +1,3 @@
-shooter = oPlayer
-
 origin_x = 0
 origin_y = 0
 angulation = 0

@@ -57,6 +57,7 @@
     {"id":{"name":"gamefont","path":"sprites/gamefont/gamefont.yy",},},
     {"id":{"name":"sAsteroid","path":"sprites/sAsteroid/sAsteroid.yy",},},
     {"id":{"name":"sBlast","path":"sprites/sBlast/sBlast.yy",},},
+    {"id":{"name":"scorefont","path":"sprites/scorefont/scorefont.yy",},},
     {"id":{"name":"sExplosion","path":"sprites/sExplosion/sExplosion.yy",},},
     {"id":{"name":"sMoon","path":"sprites/sMoon/sMoon.yy",},},
     {"id":{"name":"sOrbitDot","path":"sprites/sOrbitDot/sOrbitDot.yy",},},

@@ -19,7 +19,7 @@ if (blast_rate_timer == 0){
 		blast_rate_timer++
 		var blast = instance_create_layer(x, y, "Game", oLaserBlast)
 	
-		blast.shooter = id
+		blast.shooter = self
 		blast.sprite_index = blast_sprite
 		blast.image_angle = image_angle - 90
 		blast.origin_x = x
