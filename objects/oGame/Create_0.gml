@@ -30,6 +30,8 @@ for (var dist=global.ORBIT_DISTANCE; dist>0; dist--){
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
 
-global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/SHP .", false, 0)
+global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HP", false, 0)
 
 global.DRAW_SPACING = 10
+
+index_hp = 0
