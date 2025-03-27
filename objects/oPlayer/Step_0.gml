@@ -26,6 +26,7 @@ if (blast_rate_timer == 0){
 		blast.origin_y = y
 		blast.blast_distance = blast_distance
 		blast.blast_speed = blast_speed
+		blast.damage = blast_damage
 		blast.angulation = blast.image_angle
 	}
 }else{
@@ -78,4 +79,17 @@ x = new_xy[0]
 y = new_xy[1]
 image_angle = rotation_angle
 
+// Recuperar hp
+
+if (hp >= hp_max){
+	hp = hp_max
+}else{
+	hp += hp_recover_frames
+}
+
 hp_percent = (hp / hp_max) * 100
+
+
+if (hp <= 0){
+	room_goto(gameover)
+}

@@ -3,6 +3,13 @@ global.START_ANGLE = 0
 global.ORBIT_DOT_DIVISOR = 1
 global.SPEED_CHANGE_RATE = 0.25
 global.SPEED_CHANGE_TIMEOUT = 10 // Em frames
+global.MAX_ASTEROID_SPEED = 0.25
+global.MIN_ASTEROID_SPEED = 0.1
+global.MIN_ASTEROID_DAMAGE = 0.5
+global.MAX_ASTEROID_DAMAGE = 1.5
+global.ASTEROID_CHANCE = 0.002 // Em porcentagem
+global.CHANCE_MULTIPLIER = 1000 // Número usado para definir os números aleatórios de chnace
+
 
 // Adicionar o planeta
 global.PLANET = instance_create_layer(room_width/2, room_height/2, "Game", oPlanet)
@@ -33,7 +40,7 @@ for (var dist=global.ORBIT_DISTANCE; dist>0; dist--){
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
 
-global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HP", false, 0)
+global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HPE", false, 0)
 
 global.DRAW_SPACING = 10
 
