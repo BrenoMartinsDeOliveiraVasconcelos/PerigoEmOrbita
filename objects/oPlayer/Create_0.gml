@@ -7,6 +7,8 @@ decrease_speed_key = ord("X")
 shoot_key = vk_enter
 
 hp = 100
+hp_max = 100
+hp_percent = (hp / hp_max) * 100
 blast_sprite = sBlast
 blast_speed = 5
 blast_distance = 64

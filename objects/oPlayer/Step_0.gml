@@ -77,3 +77,5 @@ var new_xy = get_xy_angle(global.PLANET.x, global.PLANET.y, global.ORBIT_DISTANC
 x = new_xy[0]
 y = new_xy[1]
 image_angle = rotation_angle
+
+hp_percent = (hp / hp_max) * 100

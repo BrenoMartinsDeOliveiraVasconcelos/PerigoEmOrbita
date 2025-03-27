@@ -52,6 +52,7 @@
     {"id":{"name":"sOrbitDot","path":"sprites/sOrbitDot/sOrbitDot.yy",},},
     {"id":{"name":"sPlanet_1","path":"sprites/sPlanet_1/sPlanet_1.yy",},},
     {"id":{"name":"sPlanet","path":"sprites/sPlanet/sPlanet.yy",},},
+    {"id":{"name":"sPlayer_1","path":"sprites/sPlayer_1/sPlayer_1.yy",},},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},},
   ],
   "resourceType":"GMProject",

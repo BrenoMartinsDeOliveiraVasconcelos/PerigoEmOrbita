@@ -8,7 +8,7 @@ global.SPEED_CHANGE_TIMEOUT = 10 // Em frames
 global.PLANET = instance_create_layer(room_width/2, room_height/2, "Game", oPlanet)
 
 // Adicionar o player
-global.PLAYER = instance_create_layer(room_width/2, room_height/2, "Game", oPlayer)
+global.PLAYER = instance_create_layer(room_width/2, room_height/2, "Player", oPlayer)
 
 // Colocar o player na órbita
 
