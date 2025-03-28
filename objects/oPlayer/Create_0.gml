@@ -8,7 +8,7 @@ shoot_key = vk_enter
 
 hp = 100
 hp_max = 100
-hp_recover_frames = 0.001 // Quanto HP recupera por frame
+hp_recover_frames = 0.0001 // Quanto HP recupera por frame
 hp_percent = (hp / hp_max) * 100
 points = 0
 blast_sprite = sBlast

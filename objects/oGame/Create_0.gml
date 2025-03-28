@@ -1,4 +1,5 @@
 global.ORBIT_DISTANCE = 64 // Distancia do ponto de orgem
+global.MOON_DISTANCE = 72 // Distancia da lua do planeta
 global.START_ANGLE = 0
 global.ORBIT_DOT_DIVISOR = 1
 global.SPEED_CHANGE_RATE = 0.25
@@ -40,6 +41,19 @@ for (var dist=global.ORBIT_DISTANCE; dist>0; dist--){
 	}
 	alpha_increase += 0.015
 }
+
+
+// Spawnar a lua
+global.MOON = instance_create_layer(global.PLANET.x+global.MOON_DISTANCE , global.PLANET.y-global.MOON_DISTANCE, "Game", oMoon)
+
+
+// Spawnar foguete
+global.UPGRADE_ROCKET = instance_create_layer(global.MOON.x, global.MOON.y-(global.MOON.sprite_height/2), "Game", oUpgradeRocket)
+
+
+// Ajustar para ficar em cima exatamente
+global.UPGRADE_ROCKET.y = global.UPGRADE_ROCKET.y - (global.UPGRADE_ROCKET.sprite_height/2)
+
 
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
