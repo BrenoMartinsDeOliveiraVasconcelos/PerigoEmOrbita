@@ -70,3 +70,6 @@ change_index_time = 30 // Em grames
 global.basecard = instance_create_layer(room_width*3, room_height*3, "Screen", oCard)
 global.cards = []
 global.card_selection  = 0
+global.card_selection_instance = global.basecard
+global.card_gui = oCardGui
+global.ok_card = oOkCard

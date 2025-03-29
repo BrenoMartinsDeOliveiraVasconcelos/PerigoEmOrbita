@@ -1,7 +1,6 @@
 if (sprite_index == sRocketFire && !colided){
 	colided = true
 	// Parar de spawnar asteroides temporariamente
-	var og_asteroid_max = global.MAX_ASTEROID_COUNT
 	global.MAX_ASTEROID_COUNT = 0
 	
 	// Criar cartas
@@ -15,6 +14,10 @@ if (sprite_index == sRocketFire && !colided){
 	
 	var xcounter = 0
 	
+	// Colocar o background
+	global.card_gui = instance_create_layer(room_width/2, room_height/2, "Screen", oCardGui)
+	
+	// Colocar as cartas
 	for (var i=0; i<divisions; i++){
 		var card = instance_create_layer(xcoord, ycoord, "Screen", oCard)
 		card.number = i+1 // Assignar um número
@@ -36,5 +39,8 @@ if (sprite_index == sRocketFire && !colided){
 		
 		card.x += diff_from_xcenter
 	}
+
+	// colocar o botão de OK
 	
+	global.ok_card = instance_create_layer(room_width/2, global.card_gui.y+global.card_gui.sprite_height/2, "Screen", oOkCard)
 }
