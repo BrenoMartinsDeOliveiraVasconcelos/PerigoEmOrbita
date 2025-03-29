@@ -15,6 +15,7 @@ global.MAX_ASTEROID_COUNT = 1
 global.ASTEROID_CHANCE = 0.5 // Em porcentagem
 global.CHANCE_MULTIPLIER = 1000 // Número usado para definir os números aleatórios de chnace
 global.SCOREPOS = 0.10 // Porcentagem para localização do score
+global.CARDS_PADDING = 0.10 // Porcantagem para distancia das cartas
 
 // Adicionar o planeta
 global.PLANET = instance_create_layer(room_width/2, room_height/2, "Game", oPlanet)
@@ -58,10 +59,14 @@ global.UPGRADE_ROCKET.y = global.UPGRADE_ROCKET.y - (global.UPGRADE_ROCKET.sprit
 global.PLAYER.x = xy_player[0]
 global.PLAYER.y = xy_player[1]
 
-global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HPE-", false, 0)
+global.GAMEFONT = font_add_sprite_ext(gamefont, "AKM0123456789/S .HPE-U", false, 0)
 global.SCOREFONT = font_add_sprite_ext(scorefont, "A0123456789-.Z", false, 0)
 
 global.DRAW_SPACING = 10
 
 index_hp = 0
 change_index_time = 30 // Em grames
+
+global.basecard = instance_create_layer(room_width*3, room_height*3, "Screen", oCard)
+global.cards = []
+global.card_selection  = 0

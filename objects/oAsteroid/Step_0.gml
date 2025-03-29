@@ -21,7 +21,6 @@ var acumulated_speed_number = calculate_influence(acumulated_speed_influence, ba
 var damage_num = calculate_influence(damage_influence, base_score, damage)
 
 actual_score = base_score + (acumulated_speed_number + damage_num)
-show_debug_message(string(actual_score))
 
 // Destruir em caso de HP < 0
 if (hp <= 0){
@@ -30,3 +29,7 @@ if (hp <= 0){
 }
 
 
+// Checar se a existencia ainda é necessária
+if (global.MAX_ASTEROID_COUNT <= 0){
+	instance_destroy()
+}

@@ -1,7 +1,7 @@
 if (sprite_index == sRocket){
-	upgrade_time -= 1
+	upgrade_time += 1
 
-	if (upgrade_time <= 0){
+	if (upgrade_time >=  upgrade_time_max){
 		sprite_index = sRocketAvaliable
 		upgrade_time = upgrade_time_max
 	}
