@@ -11,6 +11,9 @@ if (global.card_selection > 0){
 			global.PLAYER.max_c_speed *= 1.25
 			global.PLAYER.c_speed = global.PLAYER.max_c_speed
 			break
+		case recover_speed_card:
+		global.PLAYER.hp_recover_frames *= 1.5
+		break
 	}
 	
 	global.card_selection_instance.is_confirm = true

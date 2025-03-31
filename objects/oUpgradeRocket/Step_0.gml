@@ -29,6 +29,8 @@ if (sprite_index == sRocket){
 			upgrade_time = 0
 			upgrade_perc = 0
 			colided = false
+			global.card_selection = 0
+			global.card_selection_instance = global.basecard
 		}
 	}
 }

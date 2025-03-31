@@ -1,3 +1,5 @@
+randomise()
+
 global.ORBIT_DISTANCE = 64 // Distancia do ponto de orgem
 global.MOON_DISTANCE = 72 // Distancia da lua do planeta
 global.START_ANGLE = 0

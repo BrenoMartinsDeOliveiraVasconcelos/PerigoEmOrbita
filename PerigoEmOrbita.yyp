@@ -78,6 +78,7 @@
     {"id":{"name":"card_speed","path":"sprites/card_speed/card_speed.yy",},},
     {"id":{"name":"gamefont","path":"sprites/gamefont/gamefont.yy",},},
     {"id":{"name":"ok_button","path":"sprites/ok_button/ok_button.yy",},},
+    {"id":{"name":"recover_speed_card","path":"sprites/recover_speed_card/recover_speed_card.yy",},},
     {"id":{"name":"sAsteroid","path":"sprites/sAsteroid/sAsteroid.yy",},},
     {"id":{"name":"sBlast","path":"sprites/sBlast/sBlast.yy",},},
     {"id":{"name":"scorefont","path":"sprites/scorefont/scorefont.yy",},},
