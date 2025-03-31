@@ -47,4 +47,6 @@ if (sprite_index == sRocketFire && !colided){
 	// Colocar o botão de cancelar
 	global.cancel_card = instance_create_layer(global.ok_card.x-global.ok_card.sprite_width/2, global.ok_card.y, "Screen", oCancelCard)
 	
+	// Ajeitar o X para não conflitar a colisão
+	global.cancel_card.x -= global.cancel_card.sprite_width/2
 }
