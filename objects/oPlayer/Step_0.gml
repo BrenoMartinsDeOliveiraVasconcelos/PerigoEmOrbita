@@ -6,11 +6,11 @@ if (keyboard_check(down_key)){
 	current_angle -= c_speed
 }
 
-if (keyboard_check(rotation_up_key)){
+if (keyboard_check(rotation_up_key) or mouse_wheel_up()){
 	rotation_angle += rotation_speed
 }
 
-if (keyboard_check(rotation_down_key)){
+if (keyboard_check(rotation_down_key) or mouse_wheel_down()){
 	rotation_angle -= rotation_speed
 }
 

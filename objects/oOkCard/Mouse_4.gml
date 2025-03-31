@@ -16,6 +16,11 @@ if (global.card_selection > 0){
 		
 		global.PLAYER.hp_recover_frames *= 1.25
 		break
+		case rotation_speed_card:
+			global.PLAYER.rotation_speed += 0.50
+			break
+		case planet_recover_speed_card:
+			global.PLANET.hp_recorvery_rate *= 1.25
 	}
 	
 	global.card_selection_instance.is_confirm = true
