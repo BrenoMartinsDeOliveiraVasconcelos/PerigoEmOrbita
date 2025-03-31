@@ -4,7 +4,8 @@ if (global.card_selection > 0){
 		case card_speed:
 		
 		if (global.PLAYER.max_c_speed == global.PLAYER.original_speed){
-			global.MAX_ASTEROID_COUNT *= 2
+			global.MAX_ASTEROID_COUNT = global.UPGRADE_ROCKET.og_asteroid_max * 2
+			global.UPGRADE_ROCKET.og_asteroid_max = global.MAX_ASTEROID_COUNT
 		}
 		
 			global.PLAYER.max_c_speed *= 1.25
