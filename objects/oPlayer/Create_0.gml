@@ -20,6 +20,7 @@ current_angle = global.START_ANGLE // angulo atual
 rotation_angle = image_angle
 c_speed = 1.25
 max_c_speed = 1.25
+original_speed = max_c_speed
 rotation_speed = 1.5
 
 speed_change_time = 0

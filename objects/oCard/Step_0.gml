@@ -22,6 +22,7 @@ if (number == global.card_selection){
 		
 		instance_destroy(global.card_gui)
 		instance_destroy(global.ok_card)
+		instance_destroy(global.cancel_card)
 		instance_destroy()
 	}
 }

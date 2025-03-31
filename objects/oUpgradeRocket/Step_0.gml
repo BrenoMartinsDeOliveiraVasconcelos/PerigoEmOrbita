@@ -1,5 +1,6 @@
 if (sprite_index == sRocket){
 	upgrade_time += 1
+	upgrade_perc = (upgrade_time/upgrade_time_max)*100
 
 	if (upgrade_time >=  upgrade_time_max){
 		sprite_index = sRocketAvaliable
@@ -26,6 +27,8 @@ if (sprite_index == sRocket){
 			action_finished = false
 			speed = 0
 			upgrade_time = 0
+			upgrade_perc = 0
+			colided = false
 		}
 	}
 }

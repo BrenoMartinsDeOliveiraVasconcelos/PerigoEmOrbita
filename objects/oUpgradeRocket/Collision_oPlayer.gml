@@ -43,4 +43,8 @@ if (sprite_index == sRocketFire && !colided){
 	// colocar o botão de OK
 	
 	global.ok_card = instance_create_layer(room_width/2, global.card_gui.y+global.card_gui.sprite_height/2, "Screen", oOkCard)
+
+	// Colocar o botão de cancelar
+	global.cancel_card = instance_create_layer(global.ok_card.x-global.ok_card.sprite_width/2, global.ok_card.y, "Screen", oCancelCard)
+	
 }
