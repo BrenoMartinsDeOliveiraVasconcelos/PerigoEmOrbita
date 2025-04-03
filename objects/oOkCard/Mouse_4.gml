@@ -21,6 +21,9 @@ if (global.card_selection > 0){
 			break
 		case planet_recover_speed_card:
 			global.PLANET.hp_recorvery_rate *= 1.25
+			break
+		case upgrade_speed:
+			global.UPGRADE_ROCKET.upgrade_time_max *= 0.75
 	}
 	
 	global.card_selection_instance.is_confirm = true
