@@ -33,9 +33,9 @@ if (global.card_selection > 0){
 			global.PLAYER.blast_damage *= 1.25
 			break
 		case speed_blast_card:
-		
 			global.PLAYER.blast_rate *= 1.25
 			global.PLAYER.blast_speed *= 1.25
+			break
 		
 	}
 	

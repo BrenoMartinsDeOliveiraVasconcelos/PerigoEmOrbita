@@ -40,13 +40,25 @@ if (sprite_index == sRocketFire && !colided){
 		card.x += diff_from_xcenter
 	}
 
-	// colocar o botão de OK
-	
-	global.ok_card = instance_create_layer(room_width/2, global.card_gui.y+global.card_gui.sprite_height/2, "Screen", oOkCard)
+	// Criar botão OK centralizado horizontalmente
+	global.ok_card = instance_create_layer(room_width/2, global.card_gui.y + global.card_gui.sprite_height/2, "Screen", oOkCard);
 
-	// Colocar o botão de cancelar
-	global.cancel_card = instance_create_layer(global.ok_card.x-global.ok_card.sprite_width/2, global.ok_card.y, "Screen", oCancelCard)
+	// Posicionar botão Cancelar à esquerda do OK (considerando origem central)
+	global.cancel_card = instance_create_layer(
+	    global.ok_card.x - (global.ok_card.sprite_width/2), 
+	    global.ok_card.y, 
+	    "Screen", 
+	    oCancelCard
+	);
+
+	// Calcular ponto médio entre os centros dos botões
+	var middle_point = (global.ok_card.x + global.cancel_card.x) / 2;
+
+	// Calcular diferença em relação ao centro da tela
+	var diff_from_middle = middle_point - room_width/2;
+
+	// Ajustar posição dos botões para centralizar o grupo
+	global.ok_card.x -= diff_from_middle;
+	global.cancel_card.x -= diff_from_middle;
 	
-	// Ajeitar o X para não conflitar a colisão
-	global.cancel_card.x -= global.cancel_card.sprite_width/2
 }
