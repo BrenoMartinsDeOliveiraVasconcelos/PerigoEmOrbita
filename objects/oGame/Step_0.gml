@@ -11,3 +11,13 @@ if (random_range(0, 1000) <= asteroid_chance && instance_number(oAsteroid) < glo
 	ast.damage = random_range(global.MIN_ASTEROID_DAMAGE, global.MAX_ASTEROID_DAMAGE)
 	ast.base_score = random_range(global.MIN_ASTEROID_BASE_SCORE, global.MAX_ASTEROID_BASE_SCORE)
 }
+
+// Keys relacionadas ao jogo
+
+if (keyboard_check_pressed(fullscreen_key)){
+	window_set_fullscreen(!window_get_fullscreen())
+}
+
+if (keyboard_check_pressed(exit_key)){
+	game_end()
+}

@@ -1,5 +1,8 @@
 randomise()
 
+fullscreen_key = vk_f11
+exit_key = vk_f4
+
 global.ORBIT_DISTANCE = 64 // Distancia do ponto de orgem
 global.MOON_DISTANCE = 72 // Distancia da lua do planeta
 global.START_ANGLE = 0
