@@ -21,7 +21,7 @@ rotation_angle = image_angle
 c_speed = 1.25
 max_c_speed = 1.25
 original_speed = max_c_speed
-rotation_speed = 1.5
+rotation_speed = 1
 
 speed_change_time = 0
 blast_rate_timer = 0

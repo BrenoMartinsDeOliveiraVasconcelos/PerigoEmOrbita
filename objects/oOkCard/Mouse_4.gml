@@ -12,7 +12,7 @@ if (global.card_selection > 0){
 			break
 		case recover_speed_card:
 		// Side effect: Dano máximo do asteroide aumenta
-		global.MAX_ASTEROID_DAMAGE += 1
+		global.MAX_ASTEROID_DAMAGE *= 1.25
 		
 		global.PLAYER.hp_recover_frames *= 1.25
 		break
@@ -20,10 +20,23 @@ if (global.card_selection > 0){
 			global.PLAYER.rotation_speed += 0.50
 			break
 		case planet_recover_speed_card:
+			global.MAX_ASTEROID_DAMAGE *= 1.25
+		
 			global.PLANET.hp_recorvery_rate *= 1.25
 			break
 		case upgrade_speed:
 			global.UPGRADE_ROCKET.upgrade_time_max *= 0.75
+			break
+		case card_damage_blast_up:
+			global.MAX_ASTEROID_SPEED *= 1.05
+			
+			global.PLAYER.blast_damage *= 1.25
+			break
+		case speed_blast_card:
+		
+			global.PLAYER.blast_rate *= 1.25
+			global.PLAYER.blast_speed *= 1.25
+		
 	}
 	
 	global.card_selection_instance.is_confirm = true
