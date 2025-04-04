@@ -14,6 +14,7 @@ global.MAX_ASTEROID_DAMAGE = 15
 global.MIN_ASTEROID_BASE_SCORE = 10
 global.MAX_ASTEROID_BASE_SCORE = 50
 global.MAX_ASTEROID_COUNT = 2
+global.ASTEROID_ENABLED = true
 global.ASTEROID_CHANCE = 0.5 // Em porcentagem
 global.CHANCE_MULTIPLIER = 1000 // Número usado para definir os números aleatórios de chnace
 global.SCOREPOS = 0.10 // Porcentagem para localização do score

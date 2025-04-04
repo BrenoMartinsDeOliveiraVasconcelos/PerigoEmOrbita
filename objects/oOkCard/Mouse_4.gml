@@ -4,7 +4,7 @@ if (global.card_selection > 0){
 		case card_speed:
 			
 			// Aumenta a quantidade de asteroides a cada upgrade de velocidade
-			global.MAX_ASTEROID_COUNT = global.UPGRADE_ROCKET.og_asteroid_max + 1
+			global.MAX_ASTEROID_COUNT += 1
 			global.UPGRADE_ROCKET.og_asteroid_max = global.MAX_ASTEROID_COUNT
 		
 			global.PLAYER.max_c_speed += 0.25
@@ -33,9 +33,11 @@ if (global.card_selection > 0){
 			global.PLAYER.blast_damage *= 1.25
 			break
 		case speed_blast_card:
-			global.PLAYER.blast_rate *= 1.25
+			global.PLAYER.blast_rate *= 0.75
 			global.PLAYER.blast_speed *= 1.25
 			break
+		case blast_distance_card:
+			global.PLAYER.blast_distance *= 1.25
 		
 	}
 	

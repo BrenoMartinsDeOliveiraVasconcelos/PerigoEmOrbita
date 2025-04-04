@@ -34,3 +34,8 @@ if (sprite_index == sRocket){
 		}
 	}
 }
+
+if (upgrade_time > upgrade_time_max or upgrade_perc > 100){
+	upgrade_time = upgrade_time_max
+	upgrade_perc = 100
+}

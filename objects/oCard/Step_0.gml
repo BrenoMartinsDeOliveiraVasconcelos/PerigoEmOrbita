@@ -18,7 +18,7 @@ if (number == global.card_selection){
 		global.cards = []
 		global.card_selection = 0
 		global.UPGRADE_ROCKET.action_finished = true
-		global.MAX_ASTEROID_COUNT = global.UPGRADE_ROCKET.og_asteroid_max
+		global.ASTEROID_ENABLED = true
 		
 		instance_destroy(global.card_gui)
 		instance_destroy(global.ok_card)

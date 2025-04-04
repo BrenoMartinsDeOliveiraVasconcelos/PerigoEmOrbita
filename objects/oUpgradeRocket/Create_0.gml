@@ -2,7 +2,7 @@ original_x = x
 original_y = y
 original_angle =  image_angle
 
-upgrade_time_max = 600
+upgrade_time_max = 7200
 upgrade_time = 0
 upgrade_perc = 0
 get_upgrade_key = ord("C")

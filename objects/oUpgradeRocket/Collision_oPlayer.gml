@@ -1,7 +1,7 @@
 if (sprite_index == sRocketFire && !colided){
 	colided = true
 	// Parar de spawnar asteroides temporariamente
-	global.MAX_ASTEROID_COUNT = 0
+	global.ASTEROID_ENABLED = false
 	
 	// Criar cartas
 	var divisions =3// Divide a tela em três para saber quantos x pular
@@ -45,7 +45,7 @@ if (sprite_index == sRocketFire && !colided){
 
 	// Posicionar botão Cancelar à esquerda do OK (considerando origem central)
 	global.cancel_card = instance_create_layer(
-	    global.ok_card.x - (global.ok_card.sprite_width/2), 
+	    global.ok_card.x - (global.ok_card.sprite_width), 
 	    global.ok_card.y, 
 	    "Screen", 
 	    oCancelCard

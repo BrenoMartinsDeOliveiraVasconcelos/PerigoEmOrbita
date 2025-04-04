@@ -30,6 +30,6 @@ if (hp <= 0){
 
 
 // Checar se a existencia ainda é necessária
-if (global.MAX_ASTEROID_COUNT <= 0){
+if (!global.ASTEROID_ENABLED){
 	instance_destroy()
 }
